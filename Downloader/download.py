@@ -26,7 +26,7 @@ C = input("Which one do you have: ")
 if C == "16":
     os.system("sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main' ")
 if C == "18":
-    os.system("sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main' ")
+    print('Dont need a Repo!')
 if C == "19":
     os.system("sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ eoan main' ")
 if C == "20":
