@@ -16,20 +16,9 @@ os.system("sudo apt update")
 os.system("sudo apt install obs-studio")
 print("Installing Filezilla")
 os.system("sudo apt-get install filezilla")
-
-
-print("Installing wine, this may take a while")
-os.system("sudo dpkg --add-architecture i386")
-os.system("wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -")
-os.system("sudo apt update")
-
-D = input("Do you want stable = stable, stag = staging or d = developement")
-if D == "stable":
-    os.system("sudo apt install --install-recommends winehq-stable")
-if D == "stag":
-    os.system("sudo apt install --install-recommends winehq-staging")
-if D == "d":
-    os.system("sudo apt install --install-recommends winehq-devel")
-
+print('Installing Webcam stuff')
+os.system("sudo add-apt-repository ppa:pj-assis/ppa ")
 os.system("sudo apt-get update")
+os.system("sudo apt-get install guvcview")
+
 print("installed everything!")
